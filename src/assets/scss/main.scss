@@ -1,0 +1,33 @@
+@import "./googlefonts";
+@import "./variables";
+@import "./vuetify.scss";
+@import "./scrollbar";
+
+body {
+  background-color: $page-white !important;
+}
+
+// ! No padding - using p-0 causes issues with padding not holding correctly on some elements;
+// ! this class fixes those inconsistencies.
+// ! @NickBrahimir
+.no-padding {
+  padding: 0 !important;
+}
+
+// Flex Centered
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Colors
+.page-white {
+  background-color: $page-white !important;
+}
