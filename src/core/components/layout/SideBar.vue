@@ -65,28 +65,22 @@ export default defineComponent({
         icon: null,
         items: [
           {
-            title: "Calendar",
-            icon: "mdi-calendar-month",
-            page: { name: "Calendar" },
-            hideFromImpersonation: false
+            title: "Dashboard",
+            icon: "mdi-monitor-dashboard",
+            page: { name: "Home" }
           }
-        ],
-        roles: ["Dispatcher", "Administrator", "SystemUser"],
-        requiresClient: true
+        ]
       },
       {
         section: null,
         icon: null,
         items: [
           {
-            title: "Job Search",
+            title: "Search",
             icon: "mdi-magnify",
-            page: { name: "Job Search" },
-            hideFromImpersonation: false
+            page: { name: "Home" }
           }
-        ],
-        roles: ["Dispatcher", "Administrator", "SystemUser"],
-        requiresClient: true
+        ]
       },
       {
         section: "Dispatch",

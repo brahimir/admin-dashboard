@@ -34,7 +34,7 @@ export default defineComponent({
       // if (this.$route.name === "Calendar") return true;
       // if (this.$route.name === "Dispatch - Job Scheduler") return true;
 
-      return true;
+      return false;
     });
 
     return {
@@ -44,4 +44,13 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#layout {
+  height: 100%;
+}
+
+#content {
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+}
+</style>

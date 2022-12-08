@@ -3,8 +3,7 @@
     <!-- start:: Company Name and Logo -->
     <router-link :to="{ name: 'Home' }">
       <v-list-item-avatar>
-        <!-- //TODO - sample logo -->
-        <!-- <v-img :src="currentUser.client.CompanyLogo"></v-img> -->
+        <img src="@/assets/img/sample-logo/android-chrome-512x512.png" />
       </v-list-item-avatar>
     </router-link>
 
@@ -17,9 +16,9 @@
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn text v-bind="attrs" v-on="on">
-          <v-icon>mdi-user</v-icon>
-          <span class="pl-2" v-if="currentUser.firstName">{{ currentUser.firstName }}</span>
-          <span class="pl-2" v-else>{{ currentUser.email }}</span>
+          <v-icon>mdi-account</v-icon>
+          <span class="pl-2">Firstname</span>
+          <span class="pl-2">Lastname</span>
           <v-icon right>mdi-chevron-down</v-icon>
         </v-btn>
       </template>
@@ -35,6 +34,10 @@
       </v-list>
     </v-menu>
     <!-- end:: User Menu -->
+
+    <v-btn icon>
+      <v-icon>mdi-cog</v-icon>
+    </v-btn>
   </v-app-bar>
 </template>
 
