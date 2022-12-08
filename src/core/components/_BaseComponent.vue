@@ -11,7 +11,10 @@ export default defineComponent({
   name: "BaseComponent",
   components: {},
   props: {},
-  setup(props) {}
+
+  setup(props) {
+    // TODO
+  }
 });
 </script>
 
